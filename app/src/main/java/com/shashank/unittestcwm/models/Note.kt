@@ -23,9 +23,13 @@ data class Note (
 
 
     @PrimaryKey(autoGenerate = true)
-    var id: Long = System.currentTimeMillis() // default id
+    var id: Int = -1 // default id
 
     constructor(note: Note): this(note.title, note.content, note.timestamp) {
+        this.id = id
+    }
+
+    constructor(id: Int, title: String, content: String?, timestamp: String): this(title, content, timestamp) {
         this.id = id
     }
 
