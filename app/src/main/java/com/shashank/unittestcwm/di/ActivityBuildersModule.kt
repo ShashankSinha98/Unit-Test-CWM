@@ -1,6 +1,6 @@
 package com.shashank.unittestcwm.di
 
-import com.shashank.unittestcwm.NotesListActivity
+import com.shashank.unittestcwm.ui.noteslist.NotesListActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
