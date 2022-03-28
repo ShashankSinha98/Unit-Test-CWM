@@ -1,11 +1,10 @@
 package com.shashank.unittestcwm.ui
 
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import io.reactivex.functions.Function
 
 
-
-
-class Resource<T> (
+class Resource<T>(
     val status: Status,
     val data: T?=null,
     val message: String?=null) {
